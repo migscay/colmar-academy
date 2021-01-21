@@ -1,0 +1,47 @@
+.navbar-custom {
+    height: 4rem;
+    padding: 1rem 1.5rem;
+}
+
+.padding32x24 {
+    padding: 2rem 1.5rem;
+}
+
+.padding-left6 {
+    padding-left: 6rem; 
+}
+
+.padding-bottom32 {
+    padding-bottom: 32px;
+    margin-top: 0;
+
+}
+
+
+.img-60 {
+    width: 60%;
+    height: auto;
+}
+
+.aside-40 {
+    width: 40%;
+}
+
+.bg-customgray {
+    background-color: #bfbfbf;
+}
+
+.btn-dark {
+    width: 60%;
+    color: white;
+    padding: .5rem 0;
+    //background-color: #999999;
+    background-color: black;
+}
+
+.btn-light {
+    width: 90%;
+    color: white;
+    padding: .5rem 0;
+    background-color: #999999;
+}

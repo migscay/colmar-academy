@@ -5,45 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Colmar Academy</title>
 </head>
 <body>
     <!-- Navbar Component -->
+    <!-- navbar visible from medium screens and larger-->
+    <div class="d-none d-md-inline">
+        <nav class="navbar navbar-custom navbar-expand navbar-light py-3 pl-4 pr-4">
+            <a class="navbar-brand" href="#"><img class="pr-1 w-25" src="./img/ic-logo.svg" alt="Colmar logo"><span><span class="font-weight-bold">COLMAR</span>ACADEMY</span></a>
+            <div class="ml-auto">
+                <ul class="navbar-nav">
+                    <!-- for display width 768px and up -->
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">On Campus<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item pl-3">
+                        <a class="nav-link" href="#">Online</a>
+                    </li>
+                    <li class="nav-item pl-3">
+                        <a class="nav-link" href="#">For Companies</a>
+                    </li>
+                    <li class="nav-item pl-3">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    <nav class="navbar navbar-custom navbar-expand navbar-light bg-light py-3 pl-4 pr-4">
-        <a class="navbar-brand" href="#"><img class="pr-1 w-25" src="./img/ic-logo.svg" alt="Colmar logo"><span class="d-none d-sm-inline"><span class="font-weight-bold">COLMAR</span>ACADEMY</span></a>
-        <div class="ml-auto">
-            <ul class="navbar-nav">
-                <!-- for display width 768px and up -->
-                <li class="nav-item active d-none d-md-inline">
-                    <a class="nav-link" href="#">On Campus<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item d-none d-xs-inline pl-3">
-                    <a class="nav-link" href="#">Online</a>
-                </li>
-                <li class="nav-item d-none d-md-inline pl-3">
-                    <a class="nav-link" href="#">For Companies</a>
-                </li>
-                <li class="nav-item d-none d-md-inline pl-3">
-                    <a class="nav-link" href="#">Sign in</a>
-                </li>
+    <!-- navbar visible for screens smaller than medium screens-->
+    <div class="d-inline d-md-none">
+        <nav class="navbar navbar-custom navbar-expand navbar-light py-3 pl-4 pr-4">
+            <a class="navbar-brand" href="#"><img class="pr-1 w-25" src="./img/ic-logo.svg" alt="Colmar logo"></a>
+            <div class="ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><img src="./img/ic-on-campus.svg" alt="On Campus"><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  padding-left6">
+                        <a class="nav-link" href="#"><img src="./img/ic-online.svg" alt="Online"></a>
+                    </li>
+                    <li class="nav-item padding-left6">
+                        <a class="nav-link" href="#"><img src="./img/ic-login.svg" alt="Login"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-                <!-- for display width below 768px -->
-                <li class="nav-item active d-inline d-md-none">
-                    <a class="nav-link" href="#"><img src="./img/ic-on-campus.svg" alt="On Campus"><span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item nav-item-custom d-inline d-md-none">
-                    <a class="nav-link" href="#"><img src="./img/ic-online.svg" alt="Online"></a>
-                </li>
-                <li class="nav-item nav-item-custom d-inline d-md-none">
-                    <a class="nav-link" href="#"><img src="./img/ic-login.svg" alt="Login"></a>
-                </li>
-
-            </ul>
+    <!-- first section visible from medium screens and larger-->
+    <section class="container-fluid padding32x24 bg-customgray d-none d-md-block">
+        <div class="row no-gutters">
+            <img class="img-60" src="./img/banner.jpg" alt="Learn Something New">
+            <aside class="aside-40 align-self-center">
+                <h1 class="font-weight-bold pl-4 mb-4">Learn Something<br> New Everyday</h1>
+                <h4 class="pl-4 mb-4">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h4>
+                <button class="btn btn-dark ml-4" type="button" class="btn">Start Here</button>
+            </aside>
         </div>
-    </nav>
+    </section>
 
-    
+    <!-- first section visible for screens smaller than medium screens -->
+    <section class="container-fluid padding-bottom32 d-inline d-md-none">
+        <div class="row no-gutters">
+            <img class="w-100 h-100" src="./img/banner.jpg" alt="Learn Something New">
+            <aside class="w-100 bg-customgray align-self-center">
+                <h1 class="font-weight-bold pl-4 pt-3 mb-4">Learn Something<br> New Everyday</h1>
+                <h4 class="pl-4 mb-4">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h4>
+                <button class="btn btn-light ml-4 mb-4" type="button" class="btn">Start Here</button>
+            </aside>
+        </div>
+    </section>
 </body>
 </html>
