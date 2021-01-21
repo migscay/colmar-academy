@@ -23,6 +23,16 @@
     height: auto;
 }
 
+.col-60 {
+    width: 60%;
+    height: auto;
+}
+
+.col-40 {
+    width: 40%;
+    height: auto;
+}
+
 .aside-40 {
     width: 40%;
 }
